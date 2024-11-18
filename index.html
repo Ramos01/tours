@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+   <!-- Enlace a la hoja de estilo de Font Awesome (para usar íconos sociales) -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+   <!-- Enlace a tu propia hoja de estilos CSS -->
+   <link rel="stylesheet" href="estilos.css">
+   <link rel="stylesheet" href="slider.css">
+   <link rel="stylesheet" href="piedepagina.css">
+   <link rel="stylesheet" href="encabezado.css">
+   <link rel="stylesheet" href="services.css">
+   <link rel="stylesheet" href="about.css">
+
+
+
+</head>
+
+<body>
+    
+     <!-- Encabezado -->
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="Logo.png" alt="Logo"></a>
+        </div>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+            
+            </ul>
+        </nav>
+
+        <div class="cta">
+            <a href="#contacto" class="cta-btn">Contáctanos</a> <!-- Aquí está el botón CTA de Contáctanos -->
+        </div>
+    </header>
+
+    <!-- Hero Banner con Slider Manual y Automático -->
+<section id="inicio">
+    <div class="slider">
+
+        <!-- Imagen 1 -->
+        <div class="slide">
+            <img src="Banner1.jpg" alt="Imagen 1">
+            <div class="description">
+                <h2>La Casa de los Pitufos</h2>
+                <p>Una colorida y original construcción inspirada en los famosos Pitufos, que combina la arquitectura tradicional andina con un toque único. ¡Un lugar perfecto para disfrutar y sacar fotos!.</p>
+            </div>
+        </div>
+
+        <!-- Imagen 2 -->
+        <div class="slide">
+            <img src="Banner2.jpg" alt="Imagen 2">
+            <div class="description">
+                <h2>Complejo Arqueológico de Sondor</h2>
+                <p>Un sitio preincaico en Andahuaylas, famoso por sus estructuras circulares y terrazas, que refleja la riqueza cultural de la región.</p>
+            </div>
+        </div>
+
+        <!-- Imagen 3 -->
+        <div class="slide">
+            <img src="Banner3.jpg" alt="Imagen 3">
+            <div class="description">
+                <h2>Laguna Pacucha</h2>
+                <p>Una hermosa laguna en Andahuaylas, ideal para el descanso y actividades al aire libre, <br> de paisajes naturales y un ambiente tranquilo.</p>
+            </div>
+        </div>
+
+        <!-- Imagen 4 -->
+        <div class="slide">
+            <img src="Banner4.jpg" alt="Imagen 4">
+            <div class="description">
+                <h2>Sotoq Machay</h2>
+                <p>Un impresionante complejo arqueológico en Andahuaylas, conocido por sus misteriosas <br>cavernas y vestigios preincaicos, rodeado de naturaleza y paisajes únicos.</p>
+            </div>
+        </div>
+
+        <!-- Imagen 5 -->
+        <div class="slide">
+            <img src="anda.jpg" alt="Imagen 5">
+            <div class="description">
+                <h2>Andahuaylas</h2>
+                <p>Una ciudad ubicada en el corazón de los Andes peruanos, conocida por su <br>rica historia, paisajes impresionantes y su cercanía a importantes sitios <br>arqueológicos como Sondor y la Laguna Pacucha.</p>
+            </div>
+        </div>
+
+        <!-- Imagen 6 -->
+        <div class="slide">
+            <img src="Banner5.jpg" alt="Imagen 6">
+            <div class="description">
+                <h2>Bosque de Piedra</h2>
+                <p>Un fascinante paraje natural en Andahuaylas, caracterizado por formaciones rocosas únicas que parecen esculturas de piedra, creando un paisaje surrealista y perfecto para el turismo de aventura.</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Controles de navegación -->
+    <div class="navegacion">
+        <button id="prev">&#8592;</button>
+        <button id="next">&#8594;</button>
+    </div>
+
+</section>
+
+
+<!-- Sección Quiénes Somos -->
+<section id="about">
+    <div class="container">
+        <h2>¿Quiénes Somos?</h2>
+        
+        <!-- Introducción -->
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Nuestra Misión</h3>
+                <p>Brindamos experiencias turísticas auténticas y memorables, con un servicio personalizado que garantice la satisfacción total de nuestros clientes.</p>
+            </div>
+        </div>
+        
+        <!-- Nuestros Valores -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h4>Confianza</h4>
+                <p>Generamos confianza con nuestros clientes a través de un servicio honesto y transparente.</p>
+            </div>
+            <div class="col-md-3">
+                <div class="icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>Calidad</h4>
+                <p>Nos comprometemos a ofrecer solo lo mejor a nuestros clientes, garantizando calidad en cada servicio.</p>
+            </div>
+            <div class="col-md-3">
+                <div class="icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h4>Sostenibilidad</h4>
+                <p>Apoyamos el turismo sostenible, minimizando el impacto ambiental y apoyando las comunidades locales.</p>
+            </div>
+        </div>
+        
+        <!-- Por Qué Elegirnos -->
+        <div class="row">
+            <div class="col-md-12">
+                <h3>¿Por Qué Elegirnos?</h3>
+                <p>Porque nos importa tu experiencia y nos aseguramos de que cada detalle de tu viaje sea perfecto. Nos encargamos de todo, desde la planificación hasta la ejecución, para que tú solo te preocupes por disfrutar.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Seccion serivicios -->
+    <section id="services">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="service-item">
+                <img src="mirador1.jpg" alt="Paquete 1">
+                <h3>Viajes a Medida</h3>
+                <p>Diseñamos viajes a medida para ti, según tus intereses y preferencias.</p>
+            </div>
+            <div class="service-item">
+                <img src="bosque12.jpg" alt="Paquete 2">
+                <h3>Paquetes Grupales</h3>
+                <p>Organizamos paquetes grupales con guías especializados.</p>
+            </div>
+            <div class="service-item">
+                <img src="sotoq5.jpg" alt="Paquete 3">
+                <h3>Excursiones Locales</h3>
+                <p>Te ofrecemos excursiones locales para explorar lo mejor de tu destino.</p>
+            </div>
+            
+        </div>
+    </section>
+    
+
+    <!-- Sección de Contacto -->
+<section id="contacto">
+    <div class="contact-info">
+        <h2>Contacto</h2>
+        <p>¡Ponte en contacto con nosotros para más información!</p>
+
+        <div class="contact-details">
+            <div class="contact-item">
+                <h3>Dirección</h3>
+                <p>Av. Principal 123, Ciudad, País</p>
+            </div>
+            <div class="contact-item">
+                <h3>Teléfono</h3>
+                <p><a href="tel:+123456789">+1 (234) 567-89</a></p>
+            </div>
+            <div class="contact-item">
+                <h3>Correo</h3>
+                <p><a href="mailto:info@empresa.com">info@empresa.com</a></p>
+            </div>
+        </div>
+
+        <!-- Mapa de Ubicación -->
+        <div class="map-container">
+            <h3>Ubícanos en el mapa</h3>
+            <!-- Aquí puedes insertar un mapa de Google, por ejemplo -->
+            <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15507.977826337245!2d-73.38588238605638!3d-13.65810083658179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916d2bc618880ccf%3A0x7fd3ae189b6f1088!2sPlaza%20de%20Armas%20de%20Andahuaylas!5e0!3m2!1ses-419!2spe!4v1731639725455!5m2!1ses-419!2spe" 
+    width="100%" 
+    height="400" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Pie de página -->
+<footer id="footer">
+    <div class="footer-container">
+        <!-- Información de contacto -->
+        <div class="footer-info">
+            <h3>Contacto</h3>
+            <p>Dirección: Av. Principal 123, Ciudad, País</p>
+            <p>Teléfono: <a href="tel:+123456789">+1 (234) 567-89</a></p>
+            <p>Email: <a href="mailto:info@empresa.com">info@empresa.com</a></p>
+        </div>
+
+        <!-- Enlaces rápidos -->
+        <div class="footer-links">
+            <h3>Enlaces rápidos</h3>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="footer-social">
+            <h3>Síguenos</h3>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Aviso de derechos de autor -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script> <!-- Enlazar el script de JavaScript -->
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+/* ========================== 
+   Estilos para la Sección de Servicios con imágenes más grandes
+   ========================== 
+*/
+
+#services {
+    background-color: #f0f4f7;  /* Color de fondo suave */
+    padding: 80px 20px; /* Más relleno para darle espacio a los servicios */
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333; /* Color oscuro para el título */
+    font-weight: bold; /* Título más destacado */
+    text-transform: uppercase; /* Texto en mayúsculas para mayor impacto */
+    letter-spacing: 2px; /* Espaciado entre las letras */
+}
+
+.service-item {
+    display: inline-block;
+    width: 30%; /* Tamaño flexible, pero equilibrado */
+    padding: 30px; /* Más espacio dentro de cada servicio */
+    text-align: center;
+    margin: 0 15px 30px; /* Espacio entre cada item */
+    background-color: #ffffff; /* Fondo blanco para los servicios */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    border-radius: 12px; /* Bordes más redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para efectos de hover */
+}
+
+.service-item:hover {
+    transform: translateY(-10px); /* Elevar el servicio al pasar el ratón */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
+}
+
+.service-item img {
+    width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    max-height: 200px; /* Limita la altura máxima de la imagen */
+    object-fit: cover; /* Cubre el contenedor sin distorsionar la imagen */
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Transición suave para el hover de la imagen */
+}
+
+.service-item:hover img {
+    transform: scale(1.1); /* Agranda la imagen al hacer hover */
+}
+
+.service-item h3 {
+    font-size: 1.8rem; /* Título más grande */
+    color: #2c3e50; /* Color oscuro para los títulos */
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #7f8c8d; /* Color gris suave para las descripciones */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #1e90ff; /* Azul brillante para el botón */
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 30px; /* Bordes más redondeados */
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    background-color: #1c75d1; /* Un tono más oscuro para el hover */
+    transform: scale(1.05); /* Efecto de ampliación para el hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Aumenta la sombra al hacer hover */
+}
+
+/* ========================== 
+   Media Queries para pantallas pequeñas
+   ========================== */
+
+/* Para dispositivos móviles */
+@media (max-width: 767px) {
+    #services {
+        padding: 60px 10px; /* Reducimos el padding */
+    }
+
+    #services h2 {
+        font-size: 2rem; /* Reducimos el tamaño de fuente para el título */
+        margin-bottom: 30px;
+    }
+
+    .service-item {
+        width: 90%; /* Los elementos de servicio ocupan casi todo el ancho */
+        margin: 0 auto 30px; /* Centrado y margen inferior */
+        padding: 20px; /* Menos padding */
+    }
+
+    .service-item img {
+        max-height: 150px; /* Reducimos la altura máxima de la imagen */
+    }
+
+    .service-item h3 {
+        font-size: 1.5rem; /* Reducimos el tamaño del título */
+    }
+
+    .service-item p {
+        font-size: 0.9rem; /* Reducimos el tamaño de la descripción */
+    }
+
+    .cta-button {
+        padding: 12px 25px; /* Botón más pequeño */
+        font-size: 1rem; /* Fuente más pequeña */
+    }
+}
+
+/* Para dispositivos de tamaño medio (tabletas en modo vertical) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .service-item {
+        width: 45%; /* Dos servicios por fila */
+    }
+
+    .service-item img {
+        max-height: 180px; /* Altura moderada para las imágenes */
+    }
+
+    .cta-button {
+        padding: 14px 28px; /* Botón ligeramente más grande */
+        font-size: 1.1rem; /* Fuente ligeramente más grande */
+    }
+}

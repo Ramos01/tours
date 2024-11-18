@@ -1,0 +1,171 @@
+
+/* ========================== 
+   Estilos para el Slider y Contenedor de Imágenes
+   ==========================
+*/
+
+/* Contenedor principal del slider */
+#inicio {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    overflow: hidden; /* Esconde cualquier contenido fuera del área visible */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor de las imágenes (Slider) */
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+/* Estilo para cada slide */
+.slide {
+    flex: 0 0 100%; /* Esto asegura que cada imagen ocupe el 100% del ancho disponible */
+    height: 100vh; /* Cada imagen ocupa el 100% de la altura de la ventana */
+    position: relative;
+}
+
+/* Imagen */
+.slide img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 100%; /* Asegura que la imagen ocupe todo el alto del contenedor */
+    object-fit: cover; /* La imagen cubre el contenedor sin distorsionar */
+    object-position: center; /* Centra la imagen dentro del contenedor */
+}
+
+/* Contenedor de la descripción */
+.description {
+    position: absolute;
+    top: 300px; /* Distancia desde la parte superior */
+    left: 200px;  /* Mantener espacio desde el borde izquierdo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro suave, mejor para contraste */
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra suave */
+}
+
+/* Título (h2) */
+.description h2 {
+    font-size: 1.8rem; /* Aumentar el tamaño para mayor legibilidad */
+    margin-bottom: 10px;
+    color: #ffffff; /* Color blanco para el título, más profesional */
+    font-weight: bold; /* Hace que el título sea más destacado */
+}
+
+/* Descripción (p) */
+.description p {
+    font-size: 1.1rem;
+    color: #f1f1f1; /* Gris muy claro para el texto, manteniendo la legibilidad */
+    line-height: 1.6; /* Mejor espacio entre las líneas */
+    margin: 0;
+}
+
+/* Estilos para los botones de navegación */
+.navegacion {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.navegacion button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.navegacion button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* ========================== 
+   Estilos para Responsividad
+   ==========================
+*/
+
+/* Para dispositivos con pantallas de 768px o menos (tabletas, smartphones en orientación horizontal) */
+@media (max-width: 768px) {
+    /* Contenedor del slider */
+    #slider-container {
+        height: 60vh; /* Ajusta la altura del slider para pantallas más pequeñas */
+    }
+
+    /* Contenedor de cada slide */
+    .slide {
+        height: 70vh; /* Ajusta la altura de las imágenes */
+    }
+
+    /* Descripción */
+    .description {
+        top: 250px; /* Ajusta la distancia desde la parte superior */
+        left: 15px;  /* Ajusta el margen izquierdo */
+        right: 15px; /* Añade margen derecho */
+        max-width: 90%; /* Aumenta el ancho de la descripción */
+        padding: 10px;
+    }
+
+    /* Título (h2) */
+    .description h2 {
+        font-size: 1.6rem; /* Ajusta el tamaño del título */
+    }
+
+    /* Descripción (p) */
+    .description p {
+        font-size: 1rem; /* Ajusta el tamaño del texto */
+    }
+
+    /* Botones de navegación */
+    .navegacion button {
+        padding: 8px; /* Ajusta el tamaño de los botones */
+        font-size: 1rem; /* Reduce el tamaño de los botones */
+    }
+}
+
+/* Para dispositivos con pantallas de 480px o menos (smartphones en orientación vertical) */
+@media (max-width: 480px) {
+    /* Contenedor del slider */
+    #slider-container {
+        height: 50vh; /* Ajusta la altura del slider aún más para pantallas pequeñas */
+    }
+
+    /* Contenedor de cada slide */
+    .slide {
+        height: 60vh; /* Ajusta la altura de las imágenes */
+    }
+
+    /* Descripción */
+    .description {
+        top: 200px; /* Ajusta la distancia desde la parte superior */
+        left: 10px;  /* Ajusta el margen izquierdo */
+        right: 10px; /* Añade margen derecho */
+        max-width: 90%; /* Aumenta el ancho de la descripción */
+        padding: 8px; /* Reduce el padding */
+    }
+
+    /* Título (h2) */
+    .description h2 {
+        font-size: 1.4rem; /* Ajusta el tamaño del título */
+    }
+
+    /* Descripción (p) */
+    .description p {
+        font-size: 0.9rem; /* Ajusta el tamaño del texto */
+    }
+
+    /* Botones de navegación */
+    .navegacion button {
+        padding: 6px; /* Ajusta el tamaño de los botones */
+        font-size: 0.9rem; /* Reduce el tamaño de los botones */
+    }
+}

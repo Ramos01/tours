@@ -1,0 +1,99 @@
+/* ============================
+   Estilos generales y de encabezado
+   ============================ */
+
+/* Reset para márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general para el body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Estilo del encabezado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del logo */
+.header .logo img {
+    height: 50px;
+}
+
+/* Estilo del menú de navegación */
+.nav {
+    flex: 1;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #4CAF50; /* Color cuando pasa el cursor */
+}
+
+/* Estilo del botón CTA (Call to Action) */
+.cta {
+    display: flex;
+    align-items: center;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list a {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+}
+

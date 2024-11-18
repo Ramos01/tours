@@ -1,0 +1,193 @@
+
+/* ========================
+   Pie de Página
+   ======================== */
+   footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* ========================
+   Estilo para la Sección de Contacto
+   ======================== */
+#contacto {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+}
+
+#contacto h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contacto p {
+    font-size: 1.1rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Contenedor de la información de contacto */
+.contact-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+    text-align: center;
+}
+
+.contact-item h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact-item a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #45a049;
+}
+
+/* Estilos para el mapa */
+.map-container {
+    margin-top: 40px;
+}
+
+.map-container iframe {
+    border: none;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ========================================
+   Estilos para derechos de autor
+   ======================================== */
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en pantallas pequeñas */
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-info,
+.footer-links,
+.footer-social {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-info h3,
+.footer-links h3,
+.footer-social h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #4CAF50; /* Color primario */
+}
+
+.footer-info p,
+.footer-links ul,
+.footer-social .social-icons {
+    font-size: 1rem;
+    color: #bbb; /* Color gris claro para el texto */
+}
+
+.footer-info a,
+.footer-links a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-info a:hover,
+.footer-links a:hover {
+    color: #4CAF50; /* Color de hover igual al color primario */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-social .social-icons a {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+    color: #4CAF50; /* Hover en iconos sociales */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-info,
+    .footer-links,
+    .footer-social {
+        text-align: center;
+    }
+}
+
